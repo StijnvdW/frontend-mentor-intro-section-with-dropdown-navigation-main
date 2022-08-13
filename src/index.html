@@ -10,20 +10,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body class="md:bg-almostWhite">
     <header>
         <nav class="p-4 flex items-center">
             <img src="../images/logo.svg" alt="logo" srcset="">
             <div class="desktop-menu hidden md:flex md:flex-1">
-                <div class="main-navigation flex items-center">
-                    <a href="./index.html" class="text-mediumGrey ml-10">Features</a>
-                    <a href="./index.html" class="text-mediumGrey ml-10">Company</a>
-                    <a href="./index.html" class="text-mediumGrey ml-10">Careers</a>
-                    <a href="./index.html" class="text-mediumGrey ml-10">About</a>
+                <div class="main-navigation-wrapper flex flex-row items-center inline-flex">
+                    <div class="relative ml-10">
+                        <div class="feature-nav-item flex">
+                            <a href="./index.html" class="feature-link text-mediumGrey hover:text-black">Features </a>
+                            <div class="feature-arrow self-center ml-2">
+                                <img width="10" height="6" src="../images/icon-arrow-down.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                        
+                        <div class="absolute top-10 left-0 bg-pureWhite p-6 rounded-xl">
+                            <div class="grid grid-cols-dropdown gap-y-4">
+                                <div class="self-center">
+                                    <img width="14" height="16" src="../images/icon-todo.svg" alt="Todo" srcset="">
+                                </div>
+                                <a href="./index.html" class="text-mediumGrey hover:text-black ml-4 align-text-bottom">Todo list</a>
+                                
+                                <div class="self-center">
+                                    <img width="16" height="16" src="../images/icon-calendar.svg" alt="Calendar" srcset="">
+                                </div>
+                                <a href="./index.html" class="text-mediumGrey hover:text-black ml-4 align-middle">Calendar</a>
+                                <div class="self-center">
+                                    <img width="13" height="17" src="../images/icon-reminders.svg" alt="Reminders" srcset="">
+                                </div>
+                                <a href="./index.html" class="text-mediumGrey hover:text-black ml-4 align-middle">Reminders</a>
+                                
+                                <div class="self-center">
+                                    <img width="16" height="16" src="../images/icon-planning.svg" alt="Planning" srcset="">
+                                </div>
+                                <a href="./index.html" class="text-mediumGrey hover:text-black ml-4 align-middle">Planning</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-nav-item flex">
+                        <a href="./index.html" class="company-link text-mediumGrey hover:text-black ml-10">Company</a>
+                        <div class="company-arrow self-center ml-2">
+                            <img width="10" height="6" src="../images/icon-arrow-down.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                    
+                    <a href="./index.html" class="text-mediumGrey hover:text-black ml-10">Careers</a>
+                    <a href="./index.html" class="text-mediumGrey hover:text-black ml-10">About</a>
                 </div>
                 <div class="account flex flex-1 justify-end items-center">
-                    <a href="./index.html" class="text-mediumGrey mr-10">Login</a>
-                    <button class="text-mediumGrey border border-co-black rounded-2xl px-6 py-3">Register</button>
+                    <a href="./index.html" class="text-mediumGrey hover:text-black mr-10">Login</a>
+                    <button class="text-mediumGrey border hover:text-black rounded-2xl px-6 py-3">Register</button>
                 </div>
             </div>
             <div class="mobile-menu md:hidden flex flex-1 justify-end">
@@ -47,7 +84,7 @@
                 <p class="text-mediumGrey text-center md:text-left mt-4 md:mt-28">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
                 </p>
                 <div class="mt-6 md:mt-16">
-                    <button class="bg-black text-almostWhite md:text-lg rounded-2xl px-6 py-3">
+                    <button class="bg-black text-almostWhite hover:border  hover:text-black hover:bg-almostWhite hover:border-black md:text-lg rounded-2xl px-6 py-3">
                         Learn more
                     </button>
                 </div>

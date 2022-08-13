@@ -19,7 +19,8 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        'desktop': 'auto minmax(auto, 540px) auto 480px auto'
+        'desktop': 'auto minmax(auto, 540px) auto 480px auto',
+        'dropdown': '16px auto'
       },
       screens: {
         sm: '375px',
