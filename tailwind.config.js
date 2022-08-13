@@ -19,7 +19,7 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        'desktop': 'minmax(auto, 1fr) minmax(540px, 1fr) minmax(480px, 1fr) minmax(auto, 1fr)'
+        'desktop': 'auto minmax(auto, 540px) auto 480px auto'
       },
       screens: {
         sm: '375px',

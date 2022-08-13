@@ -31,14 +31,16 @@
             </div>
         </nav>
     </header>
-    <main class="mt-2 grid grid-flow-row md:grid-flow-col md:grid-cols-desktop md:gap-x-40 place-content-center">
-        <div class="hero md:order-2 md:col-start-3">
+    <main class="mt-2 grid grid-flow-row md:grid-flow-col md:grid-cols-desktop w-full">
+        <div class="md:order-1"></div>
+        <div class="md:order-4 hero flex justify-center">
             <picture>
-                <source media="(min-width: 768px)"srcset="../images/image-hero-desktop.png">
+                <source media="(min-width: 768px)"srcset="../images/image-hero-desktop.png" width="">
                 <img src="../images/image-hero-mobile.png" width="480" height="640" alt="hero" srcset="">
             </picture>
         </div>
-        <div class="md:order-1 md:col-start-2 md:flex md:flex-col md:justify-between">
+        <div class="md:order-3"></div>
+        <div class="md:order-2 md:flex md:flex-col md:justify-between">
             <div class="intro mt-8 md:mt-16 p-4 flex flex-col justify-center text-center md:text-left">
                 <h1 class="font-bold text-4xl md:text-7xl self-center tracking-tight">Make remote work</h1>
                 
@@ -58,7 +60,7 @@
                 <img src="../images/client-maker.svg" alt="client Maker" srcset="">
             </div>
         </div>
-        
+        <div class="md:order-5"></div>
     </main>
 </body>
 </html>
