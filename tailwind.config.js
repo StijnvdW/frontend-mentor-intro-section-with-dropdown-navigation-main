@@ -2,10 +2,7 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    screens: {
-      sm: '375px',
-      xl: '1440px'
-    },
+    
     colors: {
       'almostWhite': '#FAFAFA',
       'lightGrey': '#ADADAD',
@@ -20,7 +17,15 @@ module.exports = {
     fontFamily: {
       'sans': ['Epilogue', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        'desktop': 'minmax(auto, 1fr) minmax(540px, 1fr) minmax(480px, 1fr) minmax(auto, 1fr)'
+      },
+      screens: {
+        sm: '375px',
+        xl: '1440px'
+      }
+    },
   },
   plugins: [],
 }

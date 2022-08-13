@@ -12,40 +12,53 @@
 </head>
 <body>
     <header>
-        <div class="p-4 flex">
-            <div class="logo">
-                <img src="../images/logo.svg" alt="logo" srcset="">
-            </div>
-            <nav class="flex-1 flex flex-row-reverse">
-                <div class="menu">
-                    <img src="../images//icon-menu.svg" alt="Menu" srcset="">
+        <nav class="p-4 flex items-center">
+            <img src="../images/logo.svg" alt="logo" srcset="">
+            <div class="desktop-menu hidden md:flex md:flex-1">
+                <div class="main-navigation flex items-center">
+                    <a href="./index.html" class="text-mediumGrey ml-10">Features</a>
+                    <a href="./index.html" class="text-mediumGrey ml-10">Company</a>
+                    <a href="./index.html" class="text-mediumGrey ml-10">Careers</a>
+                    <a href="./index.html" class="text-mediumGrey ml-10">About</a>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <main class="mt-2 grid grid-flow-row">
-        <div class="hero">
-            <img src="../images/image-hero-mobile.png" alt="hero" srcset="">
-        </div>
-        <div class="intro mt-8 p-4 flex flex-col justify-center text-center">
-            <h1 class="font-bold text-4xl self-center tracking-tight">Make remote work</h1>
-            
-            <p class="text-mediumGrey text-center mt-4">
-                Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
-            </p>
-            <div class="mt-6">
-                <button class="bg-black text-almostWhite rounded-2xl px-6 py-3">
-                    Learn more
-                </button>
+                <div class="account flex flex-1 justify-end items-center">
+                    <a href="./index.html" class="text-mediumGrey mr-10">Login</a>
+                    <button class="text-mediumGrey border border-co-black rounded-2xl px-6 py-3">Register</button>
+                </div>
             </div>
-            
+            <div class="mobile-menu md:hidden flex flex-1 justify-end">
+                <img src="../images//icon-menu.svg" alt="Menu" srcset="">
+            </div>
+        </nav>
+    </header>
+    <main class="mt-2 grid grid-flow-row md:grid-flow-col md:grid-cols-desktop md:gap-x-40 place-content-center">
+        <div class="hero md:order-2 md:col-start-3">
+            <picture>
+                <source media="(min-width: 768px)"srcset="../images/image-hero-desktop.png">
+                <img src="../images/image-hero-mobile.png" width="480" height="640" alt="hero" srcset="">
+            </picture>
         </div>
-        <div class="clients p-4 mt-8 grid grid-cols-4 gap-7 items-center">
-            <img src="../images/client-databiz.svg" alt="client databiz" srcset="">
-            <img src="../images/client-audiophile.svg" alt="client audiophile" srcset="">
-            <img src="../images/client-meet.svg" alt="client meet" srcset="">
-            <img src="../images/client-maker.svg" alt="client maker" srcset="">
+        <div class="md:order-1 md:col-start-2 md:flex md:flex-col md:justify-between">
+            <div class="intro mt-8 md:mt-16 p-4 flex flex-col justify-center text-center md:text-left">
+                <h1 class="font-bold text-4xl md:text-7xl self-center tracking-tight">Make remote work</h1>
+                
+                <p class="text-mediumGrey text-center md:text-left mt-4 md:mt-28">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+                </p>
+                <div class="mt-6 md:mt-16">
+                    <button class="bg-black text-almostWhite md:text-lg rounded-2xl px-6 py-3">
+                        Learn more
+                    </button>
+                </div>
+                
+            </div>
+            <div class="clients p-4 mt-8 grid grid-cols-4 gap-7 items-center">
+                <img src="../images/client-databiz.svg" alt="client Databiz" srcset="">
+                <img src="../images/client-audiophile.svg" alt="client Audiophile" srcset="">
+                <img src="../images/client-meet.svg" alt="client Meet" srcset="">
+                <img src="../images/client-maker.svg" alt="client Maker" srcset="">
+            </div>
         </div>
+        
     </main>
 </body>
 </html>
