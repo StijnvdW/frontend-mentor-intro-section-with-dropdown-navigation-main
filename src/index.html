@@ -9,8 +9,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet"> 
+    <script src="./menu.js" defer></script>
 </head>
-<body class="md:bg-almostWhite">
+<body class="md:bg-almostWhite relative">
+    <div id="mobile-menu" class="absolute hidden top-0 right-0 h-full w-60 bg-pureWhite">
+        <div class="flex flex-col">
+            <div class="close self-end p-4" onclick="closeMobileMenu()">
+                <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><g fill="#151515" fill-rule="evenodd"><path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z"/><path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z"/></g></svg>
+            </div>
+            <div class="menu flex flex-col align-bottom ml-6 gap-4">
+                <div class="mob-menu-item flex items-center">
+                    <a href="./index.html" class="text-mediumGrey hover:text-black mr-3">Features
+                    </a>
+                    <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+                </div>
+                <div class="mob-menu-item flex items-center">
+                    <a href="./index.html" class="company-link text-mediumGrey hover:text-black mr-2">Company
+                        
+                    </a>
+                    <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+                </div>
+                
+    
+                <div class="mob-menu-item flex items-center">
+                    <a href="./index.html" class="text-mediumGrey hover:text-black">Careers</a>
+                </div>
+                
+                <div class="mob-menu-item flex items-center">
+                    <a href="./index.html" class="text-mediumGrey hover:text-black">About</a>
+                </div>
+                
+            </div>
+            <div class="account flex flex-col flex-1 items-stretch mt-8 gap-4">
+                <a href="./index.html" class="text-mediumGrey hover:text-black self-center">Login</a>
+                <button class="text-mediumGrey border hover:text-black rounded-2xl px-6 py-3 self-center">Register</button>
+            </div>
+        </div>
+        
+    </div>
     <header>
         <nav class="p-4 flex items-center">
             <img src="../images/logo.svg" alt="logo" srcset="">
@@ -74,7 +110,7 @@
                 </div>
             </div>
             <!-- Mobile menu -->
-            <div class="mobile-menu md:hidden flex flex-1 justify-end">
+            <div class="hamburger-menu md:hidden flex flex-1 justify-end" onclick="openMobileMenu()">
                 <img src="../images//icon-menu.svg" alt="Menu" srcset="">
             </div>
         </nav>
