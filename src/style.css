@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.feature-dropdown-menu {
+    display: none;
+    z-index: 1;
+}
+.feature-nav-item:hover .feature-dropdown-menu {
+  display: block;
+}
+
+.company-dropdown-menu {
+    display: none;
+    z-index: 1;
+}
+.company-nav-item:hover .company-dropdown-menu {
+  display: block;
+}
