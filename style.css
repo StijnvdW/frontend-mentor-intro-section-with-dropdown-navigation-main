@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 /** Desktop menu */
+:is(.nav-item-arrow-up, .mob-nav-item-arrow-up) {
+  display:none;
+}
+
+:is(.feature-nav-item:hover, .company-nav-item:hover) .nav-item-arrow-up {
+  display: block;
+}
+
+:is(.feature-nav-item:hover, .company-nav-item:hover) .nav-item-arrow-down {
+  display: none;
+}
+
 .desktop-dropdown-menu {
   display: none;
   z-index: 1;

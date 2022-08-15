@@ -75,7 +75,6 @@ The global lay-out of page was done using CSS grid desktop makes use of 5 grid c
 
 There are still a few todo's that require some development:
 
-- arrow should change direction on hover
 - intro text on desktop doesn't match designs due e.g. title, intro text
 - list of clients width is incorrect on desktop
 - mobile menu should be full width with a dark background

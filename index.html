@@ -18,13 +18,14 @@
                 <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><g fill="#151515" fill-rule="evenodd"><path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z"/><path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z"/></g></svg>
             </div>
             <div class="menu flex flex-col align-bottom ml-6 gap-4">
-                <div class="mob-menu-item flex items-center" onclick="clickMobileDropdownMenu('mob-menu-dropdown-features')">
+                <div class="mob-menu-item flex items-center" onclick="clickMobileDropdownMenu('features')">
                     <span class="mob-menu-item-text text-mediumGrey mr-3">Features
                     </span>
-                    <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+                    <svg class="mob-nav-item-arrow-down features" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+                    <svg class="mob-nav-item-arrow-up features" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4"/></svg>
                 
                 </div>
-                <div id="mob-menu-dropdown-features" class="hidden">
+                <div class="mob-menu-dropdown features hidden">
                     <div class="px-6 pb-2 py-0 bg-pureWhite grid grid-cols-dropdown gap-y-4">
                         <!-- to do link -->
                         <div class="self-center">
@@ -48,11 +49,12 @@
                         <a href="./index.html" class="text-mediumGrey hover:text-black ml-4 align-middle">Planning</a>
                     </div>
                 </div>
-                <div class="mob-menu-item flex items-center" onclick="clickMobileDropdownMenu('mob-menu-dropdown-company')">
+                <div class="mob-menu-item flex items-center" onclick="clickMobileDropdownMenu('company')">
                     <span class="mob-menu-item-text text-mediumGrey mr-2">Company</span>
-                    <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+                    <svg class="mob-nav-item-arrow-down company" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+                    <svg class="mob-nav-item-arrow-up company" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4"/></svg>
                 </div>
-                <div id="mob-menu-dropdown-company" class="hidden">
+                <div class="mob-menu-dropdown company hidden">
                     <div class="px-6 pb-2 bg-pureWhite flex flex-col flex-shrink-0 gap-y-4">
                         <a href="./index.html" class="text-mediumGrey hover:text-black align-middle">History</a>
                         <a href="./index.html" class="text-mediumGrey hover:text-black align-middle">Our Team</a>
@@ -86,7 +88,8 @@
                         <!-- Feature menu item -->
                         <span class="nav-item-text text-mediumGrey cursor-pointer">Features</span>
                         <div class="nav-item-arrow cursor-pointer self-center ml-2">
-                            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+                            <svg class="nav-item-arrow-down" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+                            <svg class="nav-item-arrow-up" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4"/></svg>
                         </div>
                         <!-- Feature dropdown menu -->
                         <div class="desktop-dropdown-menu features absolute top-5 left-0">
@@ -118,7 +121,8 @@
                         <!-- Company menu item -->
                         <span class="nav-item-text text-mediumGrey cursor-pointer ml-10">Company</span>
                         <div class="nav-item-arrow cursor-pointer self-center ml-2">
-                            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+                            <svg class="nav-item-arrow-down" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+                            <svg class="nav-item-arrow-up" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4"/></svg>
                         </div>
                         <!-- Company dropdown menu -->
                         <div class="desktop-dropdown-menu absolute top-5 left-10 w-full">

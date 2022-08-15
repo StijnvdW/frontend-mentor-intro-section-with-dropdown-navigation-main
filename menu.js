@@ -8,12 +8,18 @@ function openMobileMenu(params) {
     mobileMenu.style.display = 'block';
 }
 
-function clickMobileDropdownMenu(id) {
-    let dropdown = document.getElementById(id);
+function clickMobileDropdownMenu(className) {
+    let dropdown = document.getElementsByClassName('mob-menu-dropdown ' + className)[0];
+    let arrowDown = document.getElementsByClassName('mob-nav-item-arrow-down ' + className)[0];
+    let arrowUp = document.getElementsByClassName('mob-nav-item-arrow-up ' + className)[0];
     let displayValue = dropdown.style.display;
     if (displayValue == 'block') {
-        dropdown.style.display = 'none'
+        arrowDown.style.display = 'block';
+        arrowUp.style.display = 'none';
+        dropdown.style.display = 'none';
     } else {
+        arrowDown.style.display = 'none';
+        arrowUp.style.display = 'block';
         dropdown.style.display = 'block';
     }
 }
