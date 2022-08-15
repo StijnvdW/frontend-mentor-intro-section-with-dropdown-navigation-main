@@ -647,12 +647,20 @@ video {
   height: 100%;
 }
 
-.w-60 {
-  width: 15rem;
+.h-screen {
+  height: 100vh;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-60 {
+  width: 15rem;
 }
 
 .flex-1 {
@@ -850,6 +858,14 @@ video {
 
 :is(.mob-menu-item:hover) path {
   stroke: #151515;
+}
+
+/** Mobile background */
+
+#mobile-menu-background {
+  background: #151515;
+  mix-blend-mode: normal;
+  opacity: 0.75;
 }
 
 .hover\:border:hover {

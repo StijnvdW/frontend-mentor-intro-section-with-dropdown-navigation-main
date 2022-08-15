@@ -74,11 +74,9 @@ The global lay-out of page was done using CSS grid desktop makes use of 5 grid c
 ### Continued development
 
 There are still a few todo's that require some development:
-
-- intro text on desktop doesn't match designs due e.g. title, intro text
-- list of clients width is incorrect on desktop
-- mobile menu should be full width with a dark background
-- hide mobile menu when resizing to desktop
+- [nice to have] intro text on desktop doesn't match designs due e.g. title, intro text
+- [nice to have] list of clients width is incorrect on desktop
+- [nice to have] hide mobile menu when resizing to desktop
 
 ### Useful resources
 

@@ -1,11 +1,15 @@
 function closeMobileMenu(params) {
     let mobileMenu = document.getElementById('mobile-menu');
+    let mobileMenuBackground = document.getElementById('mobile-menu-background');
     mobileMenu.style.display = 'none';
+    mobileMenuBackground.style.display = 'none';
 }
 
 function openMobileMenu(params) {
     let mobileMenu = document.getElementById('mobile-menu');
+    let mobileMenuBackground = document.getElementById('mobile-menu-background');
     mobileMenu.style.display = 'block';
+    mobileMenuBackground.style.display = 'block';
 }
 
 function clickMobileDropdownMenu(className) {

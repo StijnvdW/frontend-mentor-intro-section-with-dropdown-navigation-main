@@ -39,3 +39,10 @@
 :is(.mob-menu-item:hover) path {
   stroke: theme('colors.black');
 }
+
+/** Mobile background */
+#mobile-menu-background {
+  background: #151515;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
