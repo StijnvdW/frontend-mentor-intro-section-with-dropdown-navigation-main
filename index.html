@@ -19,7 +19,7 @@
             </div>
             <div class="menu flex flex-col align-bottom ml-6 gap-4">
                 <div class="mob-menu-item flex items-center" onclick="clickMobileDropdownMenu('mob-menu-dropdown-features')">
-                    <span class="text-mediumGrey hover:text-black mr-3">Features
+                    <span class="mob-menu-item-text text-mediumGrey mr-3">Features
                     </span>
                     <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
                 
@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="mob-menu-item flex items-center" onclick="clickMobileDropdownMenu('mob-menu-dropdown-company')">
-                    <span class="company-link text-mediumGrey hover:text-black mr-2">Company</span>
+                    <span class="mob-menu-item-text text-mediumGrey mr-2">Company</span>
                     <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
                 </div>
                 <div id="mob-menu-dropdown-company" class="hidden">
@@ -84,12 +84,12 @@
                 <div class="main-navigation-wrapper flex flex-row items-center">
                     <div class="feature-nav-item relative flex ml-10">
                         <!-- Feature menu item -->
-                        <span class="text-mediumGrey cursor-pointer hover:text-black">Features</span>
-                        <div class="feature-arrow cursor-pointer self-center ml-2">
-                            <img width="10" height="6" src="./images/icon-arrow-down.svg" alt="" srcset="">
+                        <span class="nav-item-text text-mediumGrey cursor-pointer">Features</span>
+                        <div class="nav-item-arrow cursor-pointer self-center ml-2">
+                            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
                         </div>
                         <!-- Feature dropdown menu -->
-                        <div class="feature-dropdown-menu absolute top-5 left-0">
+                        <div class="desktop-dropdown-menu features absolute top-5 left-0">
                             <div class="p-6 mt-5 rounded-xl bg-pureWhite grid grid-cols-dropdown gap-y-4">
                                 <!-- to do link -->
                                 <div class="self-center">
@@ -116,12 +116,12 @@
                     </div>
                     <div class="company-nav-item relative flex">
                         <!-- Company menu item -->
-                        <span class="company-link text-mediumGrey cursor-pointer hover:text-black ml-10">Company</span>
-                        <div class="company-arrow cursor-pointer self-center ml-2">
-                            <img width="10" height="6" src="./images/icon-arrow-down.svg" alt="" srcset="">
+                        <span class="nav-item-text text-mediumGrey cursor-pointer ml-10">Company</span>
+                        <div class="nav-item-arrow cursor-pointer self-center ml-2">
+                            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
                         </div>
                         <!-- Company dropdown menu -->
-                        <div class="company-dropdown-menu absolute top-5 left-10 w-full">
+                        <div class="desktop-dropdown-menu absolute top-5 left-10 w-full">
                             <div class="p-6 mt-5 rounded-xl bg-pureWhite flex flex-col flex-shrink-0 gap-y-4">
                                 <a href="./index.html" class="text-mediumGrey hover:text-black align-middle">History</a>
                                 <a href="./index.html" class="text-mediumGrey hover:text-black align-middle">Our Team</a>

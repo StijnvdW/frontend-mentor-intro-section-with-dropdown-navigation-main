@@ -2,18 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-.feature-dropdown-menu {
-    display: none;
-    z-index: 1;
+/** Desktop menu */
+.desktop-dropdown-menu {
+  display: none;
+  z-index: 1;
 }
-.feature-nav-item:hover .feature-dropdown-menu {
+:is(.feature-nav-item:hover, .company-nav-item:hover) .desktop-dropdown-menu {
   display: block;
 }
 
-.company-dropdown-menu {
-    display: none;
-    z-index: 1;
+:is(.feature-nav-item:hover, .company-nav-item:hover) path {
+  stroke: theme('colors.black');
 }
-.company-nav-item:hover .company-dropdown-menu {
-  display: block;
+
+:is(.feature-nav-item:hover, .company-nav-item:hover) .nav-item-text {
+  color: theme('colors.black');
+}
+
+/** Mobile menu */
+:is(.mob-menu-item:hover) .mob-menu-item-text {
+  color: theme('colors.black');
+}
+
+:is(.mob-menu-item:hover) path {
+  stroke: theme('colors.black');
 }

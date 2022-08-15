@@ -811,22 +811,33 @@ video {
   color: rgb(250 250 250 / var(--tw-text-opacity));
 }
 
-.feature-dropdown-menu {
+/** Desktop menu */
+
+.desktop-dropdown-menu {
   display: none;
   z-index: 1;
 }
 
-.feature-nav-item:hover .feature-dropdown-menu {
+:is(.feature-nav-item:hover, .company-nav-item:hover) .desktop-dropdown-menu {
   display: block;
 }
 
-.company-dropdown-menu {
-  display: none;
-  z-index: 1;
+:is(.feature-nav-item:hover, .company-nav-item:hover) path {
+  stroke: #151515;
 }
 
-.company-nav-item:hover .company-dropdown-menu {
-  display: block;
+:is(.feature-nav-item:hover, .company-nav-item:hover) .nav-item-text {
+  color: #151515;
+}
+
+/** Mobile menu */
+
+:is(.mob-menu-item:hover) .mob-menu-item-text {
+  color: #151515;
+}
+
+:is(.mob-menu-item:hover) path {
+  stroke: #151515;
 }
 
 .hover\:border:hover {
