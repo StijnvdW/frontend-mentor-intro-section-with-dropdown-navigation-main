@@ -69,11 +69,37 @@ The global lay-out of page was done using CSS grid desktop makes use of 5 grid c
 
 #### Dropdown menu
 
-TODO
+Add the desktop menu using only html/css by using CSS :hover selector. When hovering over a navigation item the relevant flexbox is displayed instead of hidden.
+
+```css
+:is(.feature-nav-item:hover, .company-nav-item:hover) .desktop-dropdown-menu {
+  display: block;
+}
+```
 
 #### Hamburger menu
 
-TODO
+JavaScript functions were required to catch the touch/click events to show or hide parts of the menu.
+The menu required a to be on top of the main content this was done by adding a div that is shown when menu opens.
+This was done by some basic html/CSS and JavaScript, important is to add a z-index to cover the main content.
+```html
+<div id="mobile-menu-background" class="absolute hidden z-1 top-0 right-0 h-full w-full"></div>
+```
+```css
+#mobile-menu-background {
+  background: #151515;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+```
+```js
+function openMobileMenu(params) {
+    let mobileMenu = document.getElementById('mobile-menu');
+    let mobileMenuBackground = document.getElementById('mobile-menu-background');
+    mobileMenu.style.display = 'block';
+    mobileMenuBackground.style.display = 'block';
+}
+```
 
 ### Continued development
 
@@ -81,6 +107,8 @@ There are still a few todo's that require some development:
 - [nice to have] intro text on desktop doesn't match designs due e.g. title, intro text
 - [nice to have] list of clients width is incorrect on desktop
 - [nice to have] hide mobile menu when resizing to desktop
+- [nice to have] combine mobile and desktop menu html/css
+- [nice to have] dropdown shadows on desktop
 
 ### Useful resources
 
