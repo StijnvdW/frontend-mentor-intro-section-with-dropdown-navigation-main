@@ -2,6 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+/** Text styles */
+
+/** Headling L */
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  letter-spacing: -0.5px;
+}
+
+@media screen(md) {
+  h1 {
+      font-size: 5rem;
+      line-height: 5rem;
+      letter-spacing: 1.11px;
+  }
+}
+
+/** Body M */
+.body-medium {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0px;
+}
+
+@media screen(md) {
+  .body-medium {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0px;
+    width: 445px;
+  }
+}
+
+/** Body S */
+.body-small {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0px;
+}
+
+@media screen(md) {
+  .body-small {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    letter-spacing: 0px;
+  }
+}
+
+/** Button */
+.button {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.22px;
+}
+
+@media screen(md) {
+  .button {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.25px;
+  }
+}
+
+
 /** Desktop menu */
 :is(.nav-item-arrow-up, .mob-nav-item-arrow-up) {
   display:none;
