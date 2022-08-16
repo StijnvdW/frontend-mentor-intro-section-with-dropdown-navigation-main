@@ -103,6 +103,9 @@ function openMobileMenu(params) {
 
 ### Continued development
 
+- Responsive images: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+- Make better use of svg's
+
 There are still a few todo's that require some development:
 - [nice to have] intro text on desktop doesn't match designs due e.g. title, intro text
 - [nice to have] list of clients width is incorrect on desktop
