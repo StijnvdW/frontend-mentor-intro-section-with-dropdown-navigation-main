@@ -69,7 +69,11 @@ The global lay-out of page was done using CSS grid desktop makes use of 5 grid c
 
 #### Dropdown menu
 
+TODO
+
 #### Hamburger menu
+
+TODO
 
 ### Continued development
 
