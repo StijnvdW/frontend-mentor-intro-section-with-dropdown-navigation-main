@@ -820,7 +820,7 @@ h1 {
   h1 {
     font-size: 5rem;
     line-height: 5rem;
-    letter-spacing: 1.11px;
+    letter-spacing: -1.11px;
   }
 }
 
@@ -977,6 +977,18 @@ h1 {
     margin-top: 3rem;
   }
 
+  .md\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .md\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1035,6 +1047,16 @@ h1 {
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .md\:text-left {
