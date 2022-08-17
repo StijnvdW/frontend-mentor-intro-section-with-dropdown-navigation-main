@@ -973,8 +973,8 @@ h1 {
     margin-top: 0.75rem;
   }
 
-  .md\:ml-2 {
-    margin-left: 0.5rem;
+  .md\:mr-5 {
+    margin-right: 1.25rem;
   }
 
   .md\:mt-28 {
@@ -985,8 +985,8 @@ h1 {
     margin-top: 3rem;
   }
 
-  .md\:mr-5 {
-    margin-right: 1.25rem;
+  .md\:mt-32 {
+    margin-top: 8rem;
   }
 
   .md\:flex {
@@ -1006,7 +1006,7 @@ h1 {
   }
 
   .md\:grid-cols-desktop {
-    grid-template-columns: minmax(auto, 165px) 540px auto 480px minmax(auto, 110px);
+    grid-template-columns: minmax(auto, 165px) 540px auto 480px minmax(auto, 130px);
   }
 
   .md\:flex-col {
@@ -1042,16 +1042,6 @@ h1 {
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .md\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .md\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
   }
 
   .md\:px-0 {
