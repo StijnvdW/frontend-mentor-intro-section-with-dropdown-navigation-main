@@ -103,24 +103,23 @@ function openMobileMenu(params) {
 
 ### Continued development
 
-- Responsive images: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
-- Make better use of svg's
-
+#### Nice to have's
 There are still a few todo's that require some development:
-- [nice to have] intro text on desktop doesn't match designs due e.g. title, intro text
-- [nice to have] list of clients width is incorrect on desktop
-- [nice to have] hide mobile menu when resizing to desktop
-- [nice to have] combine mobile and desktop menu html/css
-- [nice to have] dropdown shadows on desktop
+- list of clients width is incorrect on desktop
+- hide mobile menu when resizing to desktop
+- combine mobile and desktop menu html/css
+- dropdown shadows on desktop
+- Use img with svg as source for usability
 
 ### Useful resources
 
 - [Tailwind CSS dos](https://tailwindcss.com/docs/) - This helped me setup Tailwinds and understanding which utilities are available.
-- [W3Schools Hover Dropdowns](https://www.w3schools.com/howto/howto_css_dropdown.asp) - This is an amazing article which helped me create the Hover Dropdowns
+- [W3Schools Hover Dropdowns](https://www.w3schools.com/howto/howto_css_dropdown.asp) - This is an amazing article which helped me create the Hover Dropdowns.
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/position) - Made me better understand position and offset.
+- [Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) - Make use of responsive images.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/StijnvdW)
+- Frontend Mentor - [@StijnvdW](https://www.frontendmentor.io/profile/StijnvdW)
 - GitHub - [@StijndvdW](https://github.com/StijnvdW)
 - Twitter - [@StijnvdW86](https://www.twitter.com/StijnvdW86)
